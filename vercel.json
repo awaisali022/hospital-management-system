@@ -1,6 +1,5 @@
 {
-  "framework": "vite",
-  "installCommand": "npm ci --workspaces --include=dev",
+  "installCommand": "npm ci",
   "buildCommand": "npm run build --workspace frontend",
   "outputDirectory": "frontend/dist",
   "rewrites": [
@@ -12,6 +11,15 @@
   "headers": [
     {
       "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/manifest.webmanifest",
       "headers": [
         {
           "key": "Cache-Control",
