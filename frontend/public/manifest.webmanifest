@@ -1,0 +1,11 @@
+{
+  "name": "Doctor Hub",
+  "short_name": "DoctorHub",
+  "description": "Enterprise AI healthcare ecosystem",
+  "theme_color": "#020617",
+  "background_color": "#020617",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "icons": []
+}
